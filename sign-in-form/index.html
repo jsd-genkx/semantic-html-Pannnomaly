@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <form action="#">
+        <h1>Login Form</h1>
+        <div>
+            <label for="username">Username: </label>
+            <input type="email" name="username" id="username" placeholder="Enter your username" required>
+        </div>
+
+        <div>
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password" placeholder="Enter your password" minlength="8" maxlength="20" required>
+        </div>
+
+        <div>
+            <input type="checkbox" name="rememberMe" id="rememberMe" value="true">
+            <label for="rememberMe">Remember me</label>
+        </div>
+
+        <div>
+            <label for="forgotPassword">Forgot</label>
+            <a href="#">password?</a>
+        </div>
+
+        <div>
+            <button type="submit">Login</button>
+        </div>
+
+        <div>
+            <label for="register">Don't have an account?</label>
+            <a href="#">Register</a>
+        </div>
+    </form>
+</body>
+</html>
