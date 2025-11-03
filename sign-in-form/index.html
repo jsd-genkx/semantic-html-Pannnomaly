@@ -3,42 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <form action="#">
-        <fieldset>
-            <legend>Login Form</legend>
+    <div class="wrapper">
+        <form action="#">
             <h1>Login</h1>
-            <div>
-                <label for="username">Username: </label>
-                <input type="text" name="username" id="username" placeholder="Enter your username" required>
+            <div class="input-box">
+                <input type="text" name="username" id="username" placeholder="Enter your username" required><i class="fa fa-user" aria-hidden="true"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" name="password" id="password" placeholder="Enter your password" minlength="8" maxlength="20" required><i class="fa fa-lock" aria-hidden="true"></i>
             </div>
 
-            <div>
-                <label for="password">Password: </label>
-                <input type="password" name="password" id="password" placeholder="Enter your password" minlength="8" maxlength="20" required>
+            <div class="remember-forgot">
+                <label ><input type="checkbox" name="rememberMe" id="rememberMe" value="true" checked> Remember me</label>
+                <a href="#">Forgot password?</a>
             </div>
 
-            <div>
-                <input type="checkbox" name="rememberMe" id="rememberMe" value="true" checked>
-                <label for="rememberMe">Remember me</label>
-            </div>
+            <button type="submit" class="btn">Login</button>
 
-            <div>
-                <label for="forgotPassword">Forgot</label>
-                <a href="#">password?</a>
+            <div class="register-link">
+                <p>
+                    Don't have an account? <a href="#">Register</a>
+                </p>
             </div>
-
-            <div>
-                <button type="submit">Login</button>
-            </div>
-
-            <div>
-                <label for="register">Don't have an account?</label>
-                <a href="#">Register</a>
-            </div>
-        </fieldset>
-    </form>
+        </form>
+    </div>
+    
 </body>
 </html>
