@@ -1,59 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>John Doe</title>
-  </head>
-  <body>
-    <header>
-      <h1>John Doe</h1>
-      <p>Web Developer</p>
-      <hr>
-    </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jane Doe Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="left_side">
+            <div class="profileText">
+                <div class="imgbox">
+                    <img src="https://i.pinimg.com/736x/e2/f5/00/e2f500e8f14e742b9ebf22c9cd12afe6.jpg" alt="">
+                </div>
+                <h2>Jane Doe<br><span>Web Developer</span></h2>
+            </div>
 
-    <main>
-      <section id="hero">
-        <h2>About Me</h2>
-        <img
-          src="https://introduction-to-web-application.vercel.app/profile.jpg"
-          alt="photo of John Doe"
-          title="Photo of John Doe"
-          width="250px"
-          height="250px"
-        />
-        <p>
-          I am a passionate web developer with experience in HTML, CSS, and
-          JavaScript.
-        </p>
+            <div class="contactInfo">
+                <div class="title">Contact Info</div>
+                <ul>
+                    <li>
+                        <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <span class="text">+1 234 5678 900</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <span class="text">john.doe@example.com</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
+                        <span class="text">www.linkedin.com/in/johndoe</span>
+                    </li>
+                </ul>
+            </div>
 
-        <h2>Experience</h2>
-        <h3>Web Developer</h3>
-        <p>XYZ Company - June 2020 to Present</p>
-        <ul>
-          <li>
-            Developed responsive websites using HTML, CSS, and JavaScript.
-          </li>
-          <li>
-            Collaborated with team members to implement new features and improve
-            existing ones.
-          </li>
-        </ul>
+            <div class="contactInfo education">
+                <div class="title">Education</div>
+                <ul>
+                    <li>
+                        <h5>2015 - 2019</h5>
+                        <h4>Bachelor of Science in Chemistry</h4>
+                        <h4>ABC University - Graduated in 2019</h4>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-        <h2>Education</h2>
-        <h3>Bachelor of Science in Chemistry</h3>
-        <p>ABC University - Graduated in 2019</p>
-        <hr>
-      </section>
-    </main>
+        <div class="right_side">
+            <div class="about">
+                <h2 class="title2">Profile</h2>
+                <p>
+                    I am a passionate web developer with experience in HTML, CSS, and
+                    JavaScript.
+                </p>
+            </div>
 
-    <footer>
-      <h2>Contact Me</h2>
-      <p>
-        Email: john.doe@example.com <br />
-        Phone: +1234567890 <br />
-        LinkedIn: johndoe (https://www.linkedin.com/in/johndoe)
-      </p>
-    </footer>
-  </body>
+            <div class="about">
+                <h2 class="title2">Experience</h2>
+                <div class="box">
+                    <div class="year_company">
+                        <h5>June 2020 - Present</h5>
+                        <h5>XYZ Company</h5>
+                    </div>
+                    <div class="text">
+                        <h4>Web Developer</h4>
+                        <ul>
+                            <li>Developed responsive websites using HTML, CSS, and JavaScript.</li>
+                            <li>Collaborated with team members to implement new features and improve
+                                existing ones.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
